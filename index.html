@@ -4,11 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create a new repository</title>
+    <meta name="description"
+        content="GitHub is where people build software. More than 56 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <link rel="alternate icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
-
+    <main>
+        <div class="body-container">
+            <section class="repo-title">
+                <h1 class="page-title">Create a new repository</h1>
+                <p class="page-description">A repository contains all project files, including the revision history.
+                    Already have a project repository elsewhere? <a href="#">Import a repository.</a></p>
+            </section>
+            <section class="repo-form">
+                <h1 class="visually-hidden">A form for a new repository</h1>
+                <form action="submit">
+                    <div class="repo-name-container">
+                        <div class="naming-container">
+                            <div class="owner-group">
+                                <label for="owner-detail">Owner</label>
+                                <details class="owner-detail" id="owner-detail">gi
+                                    <summary class="owner-codeminnam btn">
+                                        <img alt="@codeminnam" width="20" height="20"
+                                            src="https://avatars1.githubusercontent.com/u/33533176?s=60&amp;v=4">
+                                        codeminnam
+                                    </summary>
+                                </details>
+                            </div>
+                            <span class="repo-name-slash"> / </span>
+                            <div class="repo-name-group">
+                                <label for="repo-name-input">Repository name</label>
+                                <input type="text" id="repo-name-input" />
+                            </div>
+                        </div>
+                        <p class="repo-name-suggestion">Great repository names are short and memorable. Need
+                            inspiration? How about <strong>laughing-rotary-phone</strong>?
+                        </p>
+                    </div>
+                    <div class="descrption-container">
+                        <label for="description-input">Description <span class="note">(optional)</span></label>
+                        <input type="text" id="description-input" />
+                    </div>
+                    <div class="privacy-container">
+                        <div class="public-container">
+                            <input type="radio" name="privacy-radio" id="public-radio">
+                            <svg height="32" class="public-icon" viewBox="0 0 24 24" version="1.1" width="32"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M3 2.75A2.75 2.75 0 015.75 0h14.5a.75.75 0 01.75.75v20.5a.75.75 0 01-.75.75h-6a.75.75 0 010-1.5h5.25v-4H6A1.5 1.5 0 004.5 18v.75c0 .716.43 1.334 1.05 1.605a.75.75 0 01-.6 1.374A3.25 3.25 0 013 18.75v-16zM19.5 1.5V15H6c-.546 0-1.059.146-1.5.401V2.75c0-.69.56-1.25 1.25-1.25H19.5z">
+                                </path>
+                                <path
+                                    d="M7 18.25a.25.25 0 01.25-.25h5a.25.25 0 01.25.25v5.01a.25.25 0 01-.397.201l-2.206-1.604a.25.25 0 00-.294 0L7.397 23.46a.25.25 0 01-.397-.2v-5.01z">
+                                </path>
+                            </svg>
+                            <div class="text-container">
+                                <label for="public-radio">Public</label>
+                                <span class="note">Anyone on the internet can see this repository. You choose who can
+                                    commit.</span>
+                            </div>
+                        </div>
+                        <div class="private-container">
+                            <input type="radio" name="privacy-radio" id="private-radio">
+                            <svg height="32" class="private-icon" viewBox="0 0 24 24" version="1.1" width="32"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M6 9V7.25C6 3.845 8.503 1 12 1s6 2.845 6 6.25V9h.5a2.5 2.5 0 012.5 2.5v8a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 19.5v-8A2.5 2.5 0 015.5 9H6zm1.5-1.75C7.5 4.58 9.422 2.5 12 2.5c2.578 0 4.5 2.08 4.5 4.75V9h-9V7.25zm-3 4.25a1 1 0 011-1h13a1 1 0 011 1v8a1 1 0 01-1 1h-13a1 1 0 01-1-1v-8z">
+                                </path>
+                            </svg>
+                            <div class="text-container">
+                                <label for="private-radio">Private</label>
+                                <span class="note">You choose who can see and commit to this repository.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox-container">
+                        <h3>Initialize this repository with:</h3>
+                        <p class="text-gray">Skip this step if you’re importing an existing repository.</p>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="readme-cb" />
+                            <div class="checkbox-text-group">
+                                <label for="readme-cb">Add a README file</label>
+                                <span class="note">This is where you can write a long description for your project. <a
+                                        href="#">Learn
+                                        more.</a></span>
+                            </div>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="gitignore-cb" />
+                            <div class="checkbox-text-group">
+                                <label for="gitignore-cb">Add .gitignore</label>
+                                <span class="note">Choose which files not to track from a list of templates. <a
+                                        href="#">Learn
+                                        more.</a></span>
+                            </div>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="license-cb" />
+                            <div class="checkbox-text-group">
+                                <label for="license-cb">Choose a license</label>
+                                <span class="note">A license tells others what they can and can't do with your code. <a
+                                        href="#">Learn
+                                        more.</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit" class="submit-btn btn">Create repository</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
 </body>
 
 </html>
